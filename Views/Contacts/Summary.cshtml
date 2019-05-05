@@ -1,0 +1,64 @@
+﻿@model ContactManager.Models.SummaryViewModel
+
+@{
+    ViewBag.Title = "Summary";
+}
+
+@*<h2>Summary</h2>*@
+
+<div>
+    <h4>Contact summary</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Contacts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contacts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Addresses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Addresses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeAddresses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomeAddresses)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BusinessAddresses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BusinessAddresses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherAddresses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherAddresses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Computers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Computers)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
